@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+	<fontFamily name="TH Sarabun New">
+		<normal><![CDATA[fonts/THSarabunNew/THSarabunNew.ttf]]></normal>
+		<bold><![CDATA[fonts/THSarabunNew/THSarabunNewBold.ttf]]></bold>
+		<italic><![CDATA[fonts/THSarabunNew/THSarabunNewItalic.ttf]]></italic>
+		<boldItalic><![CDATA[fonts/THSarabunNew/THSarabunNewBoldItalic.ttf]]></boldItalic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+		<exportFonts/>
+	</fontFamily>
+	<fontFamily name="Angsana New">
+		<normal><![CDATA[fonts/AngsanaNew/angsa.ttf]]></normal>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+		<exportFonts/>
+	</fontFamily>
+	<fontFamily name="Freesia New">
+		<normal><![CDATA[fonts/FreesiaNew/newFL.ttf]]></normal>
+		<bold><![CDATA[fonts/FreesiaNew/newFB.ttf]]></bold>
+		<italic><![CDATA[fonts/FreesiaNew/newFI.ttf]]></italic>
+		<boldItalic><![CDATA[fonts/FreesiaNew/newFBI.ttf]]></boldItalic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+		<exportFonts/>
+	</fontFamily>
+	<fontFamily name="Quark">
+		<normal><![CDATA[fonts/Quark/Quark-Bold.otf]]></normal>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+		<exportFonts/>
+	</fontFamily>
+</fontFamilies>
