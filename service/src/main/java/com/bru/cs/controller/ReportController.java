@@ -1,9 +1,12 @@
 package com.bru.cs.controller;
 
+import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
+
 import javax.servlet.http.HttpServletResponse;
 
 import com.bru.cs.service.NotifictionService;
 import com.bru.cs.service.ProjectService;
+import com.bru.cs.service.ReportAdminPage;
 import com.bru.cs.service.ReportPDF01Service;
 import com.bru.cs.service.UserService;
 
@@ -26,23 +29,29 @@ public class ReportController {
     private UserService userService;
 
     @Autowired
+    ReportAdminPage reportAdminPage;
+
+    @Autowired
     ProjectService projectService;
 
-    
     @Autowired
     NotifictionService notifictionService;
 
-
-    @GetMapping(value = "/paper", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @GetMapping(value = "/ReportStudent", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
     public void getPurchaseTaxPDF(HttpServletResponse response) throws Exception {
-        reportPDF01Service.genReportProjectPDF(response);
+        reportAdminPage.genStudenPDF(response);
     }
 
-    @GetMapping(value = "/concept-paper/{prono}", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @GetMapping(value = "/concept-paper/{prono}")
     @ResponseBody
     public void getPuPDF(HttpServletResponse response,@PathVariable String prono) throws Exception {
         reportPDF01Service.genPdfConceptPaper(response,prono);
     }
 
+    @GetMapping(value = "/genReportTecherPDF")
+    @ResponseBody
+    public void getTecherPDF(HttpServletResponse response) throws Exception {
+        reportAdminPage.genReportTecherPDF(response);
+    }
 }

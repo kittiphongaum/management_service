@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.2.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="UC_HRBO_316" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="814" leftMargin="14" rightMargin="14" topMargin="28" bottomMargin="28" uuid="d0d4284d-f921-4b6f-97ba-88c031b15021">
+	<parameter name="userId" class="java.lang.String"/>
+	<parameter name="userName" class="java.lang.String"/>
+	<parameter name="teachNo" class="java.lang.String"/>
+	<parameter name="teachSecondNo" class="java.lang.String"/>
+	<parameter name="createdDate" class="java.lang.String"/>
+	<parameter name="statusActive" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="userId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="userId"/>
+	</field>
+	<field name="userName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="userName"/>
+	</field>
+	<field name="teachNo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="teachNo"/>
+	</field>
+	<field name="teachSecondNo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="teachSecondNo"/>
+	</field>
+	<field name="createdDate" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="createdDate"/>
+	</field>
+	<field name="statusActive" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="statusActive"/>
+	</field>
+	<variable name="logo" class="java.lang.String">
+		<initialValueExpression><![CDATA["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"]]></initialValueExpression>
+	</variable>
+	<pageHeader>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="230" y="0" width="289" height="30" uuid="17fa2d7c-531a-4ec4-aaa3-525946acd998"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH Sarabun New" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[รายงานบัญชีรายชื่ออาจารย์]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" mode="Opaque" x="30" y="0" width="100" height="30" forecolor="#FFFFFF" backcolor="#4682B4" uuid="d5a2857d-a37d-425d-9a37-07de69658fa6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6540e2c7-b19f-4174-a1ea-4c5cb814836e"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineColor="#000000"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Sarabun New" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[รหัสอาจารย์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" mode="Opaque" x="130" y="0" width="240" height="30" forecolor="#FFFFFF" backcolor="#4682B4" uuid="3fa8ea51-a9bb-43a6-aa29-4abd29708e23">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fca9ef57-21d6-46d8-9a8f-33e1addfdb1b"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineColor="#000000"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Sarabun New" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ชื่อ-นามสกุล]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" mode="Opaque" x="370" y="0" width="150" height="30" forecolor="#FFFFFF" backcolor="#4682B4" uuid="31c0d2ab-b052-4e1e-b9a4-7d77977f3029">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="047c52d1-432e-4f9c-8145-4130e36dab95"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineColor="#000000"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Sarabun New" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ที่ปรึกษาหลัก]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" mode="Opaque" x="520" y="0" width="140" height="30" forecolor="#FFFFFF" backcolor="#4682B4" uuid="78081a00-ad1c-4fd4-b79e-b77d9e11faf7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e5d73434-6a0d-442b-a7e2-1d5932b22d68"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineColor="#000000"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Sarabun New" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ที่ปรึกษาร่วม]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" mode="Opaque" x="660" y="0" width="152" height="30" forecolor="#FFFFFF" backcolor="#4682B4" uuid="7e61834c-2ae6-4cc3-991d-56cada8202df">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="14178399-e879-4432-94b1-5c53c93873d8"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineColor="#000000"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Sarabun New" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันที่สร้าง]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" mode="Opaque" x="0" y="0" width="30" height="30" forecolor="#FFFFFF" backcolor="#4682B4" uuid="97dc719e-b732-4eb7-b507-b37d3bf88f33">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6540e2c7-b19f-4174-a1ea-4c5cb814836e"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineColor="#000000"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Sarabun New" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[#]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="30" y="0" width="100" height="25" isPrintWhenDetailOverflows="true" uuid="7136a052-86c8-4b7a-bb4d-a82a75905c21">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6540e2c7-b19f-4174-a1ea-4c5cb814836e"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="TH Sarabun New" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userId}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="130" y="0" width="240" height="25" isPrintWhenDetailOverflows="true" uuid="3e444e5a-920f-454c-a33a-12d084482a4a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fca9ef57-21d6-46d8-9a8f-33e1addfdb1b"/>
+				</reportElement>
+				<box leftPadding="0">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="TH Sarabun New" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userName}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="370" y="0" width="150" height="25" isPrintWhenDetailOverflows="true" uuid="f8e29c16-3bd7-4e0b-8608-337578a5cd95">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="047c52d1-432e-4f9c-8145-4130e36dab95"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement>
+					<font fontName="TH Sarabun New" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{teachNo}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="520" y="0" width="140" height="25" isPrintWhenDetailOverflows="true" uuid="9ad9edf1-ddfd-417d-a872-d1465dd44b2f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e5d73434-6a0d-442b-a7e2-1d5932b22d68"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement>
+					<font fontName="TH Sarabun New" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{teachSecondNo}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="660" y="0" width="152" height="25" isPrintWhenDetailOverflows="true" uuid="28d7ea66-1182-4bac-97c4-97d3c311d8de">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="14178399-e879-4432-94b1-5c53c93873d8"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement>
+					<font fontName="TH Sarabun New" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{createdDate}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="30" height="25" isPrintWhenDetailOverflows="true" uuid="5a7ff1e1-0a52-4b99-ba7c-28004e7e96a5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6540e2c7-b19f-4174-a1ea-4c5cb814836e"/>
+				</reportElement>
+				<box rightPadding="4">
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="TH Sarabun New" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

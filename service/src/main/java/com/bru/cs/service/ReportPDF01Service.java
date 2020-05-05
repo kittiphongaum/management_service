@@ -16,6 +16,7 @@ import com.bru.cs.models.ConcaptModel02;
 import com.bru.cs.models.ConceptPaperModel;
 import com.bru.cs.models.NotificationModel;
 import com.bru.cs.models.ProjectModel;
+import com.bru.cs.models.SearcModel;
 import com.bru.cs.models.UserModel;
 
 import org.apache.catalina.core.ApplicationContext;
@@ -57,47 +58,7 @@ public class ReportPDF01Service {
     @Autowired
     private org.springframework.context.ApplicationContext context;
 
-    public void genReportProjectPDF(HttpServletResponse response) {
-
-        Resource resource = context.getResource("classpath:reports/SalesTax.jrxml");
-        InputStream inputStream = null;
-        try {
-            inputStream = resource.getInputStream();
-            JasperReport report = JasperCompileManager.compileReport(inputStream);
-
-            Map<String, Object> params = new HashMap<>();
-            // FundLoanDataReport reportSource = getFundLoanDataReport(empid,docNo);
-            // List<FundLoanItemModel> dataset = getFundLoanItems(empid,docNo);
-            // List<FundLoanItemModel> data = new ArrayList<>();
-
-            params.put("reportSource", null);
-            JRDataSource dataSource = null;
-            // if(data!=null && data.size()>0){
-            // dataSource = new JRBeanCollectionDataSource(null);
-            // }else {
-            dataSource = new JREmptyDataSource();
-            // }
-
-            JasperPrint jasperPrint = JasperFillManager.fillReport(report, params, dataSource);
-            response.setContentType(MediaType.APPLICATION_PDF_VALUE);
-            response.setContentType("application/pdf");
-            response.setHeader("Content-Disposition", "inline; filename=FUND_" + ".pdf");
-            JasperExportManager.exportReportToPdfStream(jasperPrint, response.getOutputStream());
-        } catch (IOException e) {
-            System.out.println(e);
-        } catch (JRException e) {
-            System.out.println(e);
-        } finally {
-            if (inputStream != null) {
-                try {
-                    inputStream.close();
-                } catch (IOException e) {
-                    System.out.println(e);
-                }
-            }
-        }
-
-    }
+   
 
     public void genPdfConceptPaper(HttpServletResponse response, String prono) {
 
@@ -174,7 +135,7 @@ public class ReportPDF01Service {
         reportConfig.setForceLineBreakPolicy(false);
 
         SimplePdfExporterConfiguration exportConfig = new SimplePdfExporterConfiguration();
-        exportConfig.setMetadataAuthor("BRU");
+        exportConfig.setMetadataAuthor("imake");
         exportConfig.setEncrypted(true);
         exportConfig.setAllowedPermissionsHint("PRINTING");
 
@@ -359,4 +320,6 @@ public class ReportPDF01Service {
 
         return concaptModel02s;
     }
+
+   
 }

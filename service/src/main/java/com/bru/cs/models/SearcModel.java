@@ -1,6 +1,6 @@
 package com.bru.cs.models;
 
-public class UserModel {
+public class SearcModel {
 
     private String userId;
     private String userPass;
@@ -9,7 +9,7 @@ public class UserModel {
     private String tel;
     private String email;
     private String createdDate;
-    private String createdDy;
+    private String createdBy;
     private String status;
     private String statusActive;
     private String facultyId;
@@ -17,8 +17,6 @@ public class UserModel {
     private String subjectId;
     private String subjectName;
     private String reqStatus;
-    private String teachNo;
-    private String teachSecondNo;
 
     public String getUserId() {
         return userId;
@@ -76,12 +74,12 @@ public class UserModel {
         this.createdDate = createdDate;
     }
 
-    public String getCreatedDy() {
-        return createdDy;
+    public String getCreatedBy() {
+        return createdBy;
     }
 
-    public void setCreatedDy(String createdDy) {
-        this.createdDy = createdDy;
+    public void setCreatedBy(String createdBy) {
+        this.createdBy = createdBy;
     }
 
     public String getStatus() {
@@ -138,22 +136,6 @@ public class UserModel {
 
     public void setReqStatus(String reqStatus) {
         this.reqStatus = reqStatus;
-    }
-
-    public String getTeachNo() {
-        return teachNo;
-    }
-
-    public void setTeachNo(String teachNo) {
-        this.teachNo = teachNo;
-    }
-
-    public String getTeachSecondNo() {
-        return teachSecondNo;
-    }
-
-    public void setTeachSecondNo(String teachSecondNo) {
-        this.teachSecondNo = teachSecondNo;
     }
 
 }
